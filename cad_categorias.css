@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+:root {
+    --principal: #0D7C4E;
+    --secundaria: #16A34A;
+    --fundo_principal: #22C55E;
+    --suave: #DDF7E7;
+    --fundo_claro:  #F7FAF8;
+    --branco: #FFFFFF;
+    --neutro: #1F2937;
+    --neutro_secundario: #6B7280;
+    --neutro_secundario-opaco: #6b728038;
+    --barra_grafico: #7DD4AF;
+    --cards_despesas: #ED4D5D;
+    --fundo_cards: #F2CDD2;
+    --cards_beneficios: #247FDD;
+    --fundo_beneficios: #D4E7F8;
+    --preto: #000000;
+    --fundo_cards1: #FFF2F4;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    color: var(--neutro);
+    background: var(--branco);
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* login e cadastro */
+
+
+.pagina-login main,
+.pagina-cadastro main {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+
+.pagina-login .esquerda,
+.pagina-cadastro .esquerda {
+    width: 50%;
+    min-height: 100vh;
+    background-image: url('../img/imagem_esquerda.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pagina-login .logo,
+.pagina-cadastro .logo {
+    text-align: center;
+}
+
+
+.pagina-login .logo img,
+.pagina-cadastro .logo img {
+    width: 235px;
+}
+
+
+.pagina-login .logo p,
+.pagina-cadastro .logo p {
+    margin: 3px 0 0;
+    color: var(--principal);
+    font-size: 20px;
+}
+
+
+.pagina-login .direita,
+.pagina-cadastro .direita {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pagina-login .formulario,
+.pagina-cadastro .formulario {
+    width: 420px;
+    max-width: 90%;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+
+.pagina-login .logo_centro,
+.pagina-cadastro .logo_centro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.pagina-login .logo_centro img,
+.pagina-cadastro .logo_centro img {
+    width: 200px;
+    height: auto;
+}
+
+
+.pagina-login .formulario h1,
+.pagina-cadastro .formulario h1 {
+    text-align: center;
+    color: var(--principal);
+    font-size: 20px;
+    margin: 0;
+}
+
+
+.pagina-login .direita p,
+.pagina-cadastro .direita p {
+    text-align: center;
+    color: var(--neutro_secundario);
+    font-size: 11px;
+    margin-bottom: 18px;
+}
+
+
+.pagina-login form,
+.pagina-cadastro form {
+    margin-top: 25px;
+}
+
+
+.pagina-login label,
+.pagina-cadastro label {
+    display: block;
+    color: var(--principal);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+
+.pagina-login input,
+.pagina-cadastro input {
+    width: 100%;
+    height: 28px;
+    border: 1px solid var(--neutro_secundario);
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+
+.pagina-login button,
+.pagina-cadastro button {
+    width: 100%;
+    height: 28px;
+    margin-top: 13px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--principal);
+    color: var(--branco);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+.cadastre {
+    text-align: center;
+}
+
+
+.cadastre h2 {
+    color: var(--neutro);
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+
+.cadastre a {
+    color: var(--principal);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+.sobreposto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--neutro_secundario-opaco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sobreposto-conteudo{
+    width: 50%;
+    height: 80%;
+    background-color: var(--branco);
+    border-radius: 37px;
+}
+
+
+.sobreposto-conteudo .voltar img{
+    width: 10%;
+    height: 10%;
+    margin-top: 40px;
+    margin-left: 60px;
+    display: flex;
+}
+
+
+.sobreposto-conteudo .voltar a{
+    color: var(--principal);
+    margin-left: 150px;
+    display: flex;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: -55px;
+}
+
+
+.sobreposto-conteudo .adicionar img{
+    width: 8%;
+    height: 8%;
+    margin-top: 70px;
+    margin-left: 155px;
+}
+
+
+.sobreposto-conteudo .adicionar p{
+
+
+    color: var(--principal);
+    margin-left: 220px;
+    display: flex;
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: -50px;
+
+
+}
+
+
+.sobreposto-conteudo .adicionar h1{
+    color: var(--neutro_secundario);
+    margin-left: 170px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.qual-categoria p{
+    color: var(--principal);
+    margin-left: 170px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+
+.qual-categoria .nome-categoria{
+    width: 460px;
+    height: 40px;
+    margin-left: 170px;
+
+}
+
+
+.qual-categoria button{
+    width: 170px;
+    height: 40px;
+    background-color: var(--principal);
+    margin-top: 30px;
+    margin-left: 460px;
+}
+
+
+.qual-categoria a{
+    color: var(--principal);
+    margin-left: 530px;
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+    .sobreposto-conteudo {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .pagina-login main {
+        flex-direction: column;
+    }
+
+
+    .pagina-login .esquerda,
+    .pagina-login .direita {
+        width: 100%;
+    }
+
+
+    .pagina-login .formulario {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+
+    .sobreposto {
+        position: fixed;
+        z-index: 67;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+
+    .sobreposto-conteudo {
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+
+    .sobreposto-conteudo .adicionar p {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+
+    .sobreposto-conteudo .adicionar h1 {
+        width: 80%;
+        margin: 10px auto;
+        font-size: 14px;
+        display: block;
+    }
+
+
+    .qual-categoria {
+        width: 80%;
+        margin: 25px auto;
+    }
+
+
+    .qual-categoria .nome-categoria {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .qual-categoria button {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+
+
+    .qual-categoria a {
+        display: block;
+        margin: 10px 0 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 425px) {
+    .sobreposto-conteudo {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+
+    .sobreposto-conteudo .voltar img {
+        width: 25px;
+        height: 25px;
+        margin: 0 0 0 20px;
+    }
+
+
+    .sobreposto-conteudo .voltar a {
+        margin: -25px 0 0 55px;
+        font-size: 16px;
+    }
+
+
+    .sobreposto-conteudo .adicionar img {
+        width: 35px;
+        height: 35px;
+        margin: 30px 0 0 10%;
+    }
+
+
+    .sobreposto-conteudo .adicionar p {
+        font-size: 25px;
+    }
+
+
+    .sobreposto-conteudo .adicionar h1 {
+        font-size: 13px;
+    }
+
+
+    .qual-categoria {
+        width: 80%;
+    }
+
+
+    .qual-categoria .nome-categoria {
+        width: 100%;
+    }
+
+
+    .qual-categoria button {
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width: 325px) {
+    .sobreposto-conteudo {
+        width: 100%;
+    }
+
+
+    .sobreposto-conteudo .adicionar p {
+        font-size: 22px;
+    }
+
+
+    .sobreposto-conteudo .adicionar h1 {
+        font-size: 12px;
+    }
+
+
+    .qual-categoria {
+        width: 85%;
+    }
+}
